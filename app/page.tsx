@@ -1,4 +1,5 @@
 import Hero from './(components)/Hero';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -50,12 +51,12 @@ export default function Home() {
         <p className="mb-8 max-w-xl mx-auto">
           Откройте для себя богатство пасхальных обычаев и их глубокий духовный смысл
         </p>
-        <a
+        <Link
           href="/traditions"
           className="inline-block bg-easter-accent text-white px-8 py-3 rounded-lg
                    hover:bg-easter-accent/90 transition-colors shadow-md">
           Исследовать традиции →
-        </a>
+        </Link>
       </section>
     </article>
   );
